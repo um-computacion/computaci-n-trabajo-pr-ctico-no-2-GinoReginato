@@ -20,6 +20,7 @@ class TestPalindrome(unittest.TestCase):
     def test_g(self):
         resultado = is_palindrome("Mauro come comida")
         self.assertEqual(resultado, False)     
+  main
 
 if __name__ == '__main__':
     unittest.main()

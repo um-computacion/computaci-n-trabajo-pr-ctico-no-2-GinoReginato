@@ -10,17 +10,28 @@ class TestPalindrome(unittest.TestCase):
         resultado = is_palindrome("ABCA")
         self.assertEqual(resultado, False)
 
+    def test_c(self):
+        resultado = is_palindrome("ne  Uq uE n")
+        self.assertEqual(resultado, True)
+
+    def test_d(self):
+        resultado = is_palindrome("ne uqu     en")
+        self.assertEqual(resultado, True)
 
     def test_e(self):
         resultado = is_palindrome("Anita lava la tina")
         self.assertEqual(resultado, True)
     
 
+    def test_f(self):
+        resultado = is_palindrome("Jose")
+        self.assertEqual(resultado, False)
+
+
 
     def test_g(self):
         resultado = is_palindrome("Mauro come comida")
         self.assertEqual(resultado, False)     
-  main
 
 if __name__ == '__main__':
     unittest.main()

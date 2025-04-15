@@ -22,9 +22,12 @@ class TestPalindrome(unittest.TestCase):
         resultado = is_palindrome("Anita lava la tina")
         self.assertEqual(resultado, True)
     
+
     def test_f(self):
         resultado = is_palindrome("Jose")
         self.assertEqual(resultado, False)
+
+
 
     def test_g(self):
         resultado = is_palindrome("Mauro come comida")
